@@ -10,7 +10,7 @@ export interface AdSenseConfig {
 }
 
 export const adsConfig: AdSenseConfig = {
-  enabled: true,
+  enabled: false,
   client: import.meta.env.VITE_ADSENSE_CLIENT || '',
   slots: {
     slot1Header: '',

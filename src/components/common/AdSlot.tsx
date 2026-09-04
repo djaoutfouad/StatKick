@@ -22,8 +22,8 @@ export const AdSlot: React.FC<AdSlotProps> = ({
   slotNumber,
   variant,
 }) => {
-  // If ads are globally disabled, do not render empty placeholder boxes
-  if (!adsConfig.enabled) {
+  // If ads are globally disabled or client ID is empty, do not render empty placeholder boxes
+  if (!adsConfig.enabled || !adsConfig.client || !adsConfig.client.trim()) {
     return null;
   }
 

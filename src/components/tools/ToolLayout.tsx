@@ -53,12 +53,17 @@ export const ToolLayout: React.FC<ToolLayoutProps> = ({
     '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': 'WebApplication',
+        '@type': 'SoftwareApplication',
         name: displayName,
         applicationCategory: 'SportsApplication',
         operatingSystem: 'All',
         description: displayDesc,
         url: `https://statkick.com/tools/${tool.slug}`,
+        author: {
+          '@type': 'Organization',
+          name: 'StatKick',
+          url: 'https://statkick.com/about',
+        },
       },
       {
         '@type': 'FAQPage',
