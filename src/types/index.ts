@@ -10,6 +10,8 @@ export interface ToolMeta {
   icon: string; // Lucide icon name
   keywords: string[];
   formulaSummary: string;
+  personaImageUrl?: string;
+  personaRole?: string;
 }
 
 export interface FAQItem {

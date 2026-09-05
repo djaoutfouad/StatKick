@@ -13,6 +13,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'Activity',
     keywords: ['player rating', 'match rating', 'football stats', 'player score', 'positional rating'],
     formulaSummary: 'Position-specific weighted composite index normalized to 100',
+    personaImageUrl: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'Match Performance & Analytics Scout',
   },
   // 2. Team Comparison
   {
@@ -26,6 +28,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'Columns2',
     keywords: ['team comparison', 'head to head team', 'team dominance', 'match stats comparison'],
     formulaSummary: 'Category win aggregation: Dominance % = (Categories Won / 7) × 100',
+    personaImageUrl: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'Head of Tactical & Match Analysis',
   },
   // 3. Pass Accuracy Calculator
   {
@@ -39,6 +43,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'Send',
     keywords: ['passing accuracy', 'pass completion', 'long balls', 'key passes', 'passing quality index'],
     formulaSummary: 'Quality = (Pass% × 0.6) + (Key Passes × 2) + (LongBall% × 0.4)',
+    personaImageUrl: 'https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'Midfield Playmaker & Passing Specialist',
   },
   // 4. Shot Conversion Rate
   {
@@ -52,6 +58,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'Target',
     keywords: ['shot conversion', 'finishing rate', 'big chances', 'shots on target', 'striker efficiency'],
     formulaSummary: 'Conversion % = (Goals / Shots) × 100 | Big Chance % = ((BC - BCM) / BC) × 100',
+    personaImageUrl: 'https://images.unsplash.com/photo-1560272564-c83b66b1ad12?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'Striker Finishing & xG Coach',
   },
   // 5. Possession Impact Analyzer
   {
@@ -65,6 +73,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'PieChart',
     keywords: ['possession efficiency', 'possession stats', 'win rate', 'possession value', 'sterile possession'],
     formulaSummary: 'Efficiency = (Win Rate / Possession %) | GPG = Goals / Matches',
+    personaImageUrl: 'https://images.unsplash.com/photo-1518604666864-74239527e7f6?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'Positional Play & Ball Control Lead',
   },
   // 6. Player Form Index
   {
@@ -78,6 +88,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'Flame',
     keywords: ['player form', 'recent form index', 'form rating', 'momentum tracker', '5-match form'],
     formulaSummary: 'Form = Base(Goals×1.5 + Assists×1.2 + Rating×0.8) - Deductions + MinBonus',
+    personaImageUrl: 'https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'First-Team Form & Fitness Coach',
   },
   // 7. Transfer Value Estimator
   {
@@ -91,6 +103,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'Coins',
     keywords: ['transfer value', 'player price', 'market value calculator', 'football transfer fee'],
     formulaSummary: 'Value = Base × AgeMult × PerfMult × LeagueMult × ContractMult + CapsBonus',
+    personaImageUrl: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'Football Sporting Director & Scout',
   },
   // 8. Wage Calculator
   {
@@ -104,6 +118,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'Banknote',
     keywords: ['football wage', 'player salary', 'weekly wage calculator', 'wage structure', 'bonus calculator'],
     formulaSummary: 'Annual = (Weekly Base × 52) + (Matches × Appearance Fee) + (Goals × Goal Bonus) + (Clean Sheets × CS Bonus)',
+    personaImageUrl: 'https://images.unsplash.com/photo-1524015368236-bbf6f72545b6?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'Player Contract & Wage Strategist',
   },
   // 9. Squad Value Calculator
   {
@@ -117,6 +133,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'Users',
     keywords: ['squad value', 'team valuation', 'starting xi value', 'bench depth value', 'roster worth'],
     formulaSummary: 'Total = Σ Players | Starting XI = Top 11 Values | Bench = Total - Starting XI',
+    personaImageUrl: 'https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'Chief Technical Officer & Roster Lead',
   },
   // 10. Contract Worth Analyzer
   {
@@ -130,6 +148,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'FileText',
     keywords: ['contract worth', 'football contract analyzer', 'transfer fee commitment', 'salary cost', 'cost per match'],
     formulaSummary: 'Total Commitment = Transfer Fee + (Annual Salary × Years) + Agent Fee + Signing Bonus',
+    personaImageUrl: 'https://images.unsplash.com/photo-1577223625816-7546f13df25d?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'Financial Fair Play & Transfer Officer',
   },
   // 11. Fantasy Football Points
   {
@@ -143,6 +163,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'Award',
     keywords: ['fantasy football calculator', 'fpl points', 'fpl calculator', 'fantasy premier league score'],
     formulaSummary: 'Analytical FPL estimate: Minutes + Positional Goals + CleanSheet + Defensive Contribution + Cards + Saves + Bonus',
+    personaImageUrl: 'https://images.unsplash.com/photo-1511886929837-354d827aae26?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'Fantasy Premier League (FPL) Quant Lead',
   },
   // 12. Best XI Selector
   {
@@ -156,6 +178,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'LayoutGrid',
     keywords: ['best xi', 'formation builder', 'starting xi selector', 'tactical pitch', 'football lineup'],
     formulaSummary: 'Heuristic positional ranking model matching formation quota constraints',
+    personaImageUrl: 'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'Starting XI Tactical Optimizer',
   },
   // 13. Captain Pick Analyzer
   {
@@ -169,6 +193,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'Crown',
     keywords: ['captain pick', 'fpl captain analyzer', 'captaincy score', 'fdr rating', 'fantasy captain'],
     formulaSummary: 'StatKick Captaincy Score = (Form × 30%) + (Fixture × 25%) + (Home × 15%) + (History × 15%) + (Team Attack × 15%)',
+    personaImageUrl: 'https://images.unsplash.com/photo-1529900748604-07564a03e7a6?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'Fantasy Captaincy & Form Analyst',
   },
   // 14. Transfer Suggestion
   {
@@ -182,6 +208,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'ArrowRightLeft',
     keywords: ['fantasy transfer', 'fpl transfer suggestions', 'differential pick', 'fantasy football strategy'],
     formulaSummary: 'Rule-based strategy matrix analyzing budget elasticity, fixture windows, and risk profiles',
+    personaImageUrl: 'https://images.unsplash.com/photo-1570498839593-e565b3d4f6fe?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'Transfer Strategy & Differential Scout',
   },
   // 15. League Table Simulator
   {
@@ -195,6 +223,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'Trophy',
     keywords: ['league table simulator', 'ppg projector', 'football standings projection', 'points simulator'],
     formulaSummary: 'Points = W×3 + D | Projected Points = Current Pts + (PPG × Remaining Matches)',
+    personaImageUrl: 'https://images.unsplash.com/photo-1575361204480-aadea25e6e68?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'League Standings & Title Race Modeler',
   },
   // 16. Points Needed Calculator
   {
@@ -208,6 +238,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'CheckCircle2',
     keywords: ['points needed', 'title race calculator', 'relegation calculator', 'magic number football'],
     formulaSummary: 'Points Deficit = Target Pts - Current Pts | Required PPG = Points Deficit / Games Remaining',
+    personaImageUrl: 'https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'Relegation & European Race Analyst',
   },
   // 17. Head to Head Stats
   {
@@ -221,6 +253,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'Swords',
     keywords: ['head to head', 'h2h football', 'historical record', 'team derby stats', 'rivalry stats'],
     formulaSummary: 'Win% = Wins/Total×100 | Dominance = (A Wins - B Wins) / Total × 100 with goal weighting',
+    personaImageUrl: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'Derby & Rivalry Matchup Specialist',
   },
   // 18. Season Goals Tracker
   {
@@ -234,6 +268,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'TrendingUp',
     keywords: ['season goals tracker', 'goals per game', 'golden boot projection', 'goal milestones'],
     formulaSummary: 'GPG = Goals / Matches | Projected = GPG × Season Matches | Milestone Pace Analysis',
+    personaImageUrl: 'https://images.unsplash.com/photo-1551958219-acbc608c6377?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'Golden Boot & Goal Milestone Analyst',
   },
   // 19. Tactical Formation Analyzer
   {
@@ -247,6 +283,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'Shield',
     keywords: ['formation analyzer', 'tactical matchup', 'football tactics', 'formation counter', 'system comparison'],
     formulaSummary: 'Tactical evaluation matrix with playing style compatibility and balance analysis',
+    personaImageUrl: 'https://images.unsplash.com/photo-1520642970126-fb1531e21182?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'UEFA Pro Tactical Systems Analyst',
   },
   // 20. Pressing Intensity Calculator
   {
@@ -260,6 +298,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'Gauge',
     keywords: ['ppda calculator', 'pressing intensity', 'high turnover', 'gegenpressing', 'defensive action'],
     formulaSummary: 'PPDA = Opponent Passes / Defensive Actions | Press Score = (12 - PPDA)×5 + SuccessRate×0.5',
+    personaImageUrl: 'https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'High Press & PPDA Defensive Analyst',
   },
   // 21. Set Piece Success Rate
   {
@@ -273,6 +313,8 @@ export const TOOLS_LIST: ToolMeta[] = [
     icon: 'Crosshair',
     keywords: ['set piece success rate', 'corner conversion', 'free kick conversion', 'penalty conversion rate'],
     formulaSummary: 'Threat Score = (Corner Goal% × 5) + (Corner Shot% × 0.4) + (DFK Accuracy% × 0.2) + (DFK Goal% × 1.5) + (IFK Goal% × 2.0) + (Penalty% × 0.2)',
+    personaImageUrl: 'https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=600&q=80',
+    personaRole: 'Set-Piece Specialist & Delivery Coach',
   },
 ];
 

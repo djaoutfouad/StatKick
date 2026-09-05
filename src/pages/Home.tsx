@@ -118,36 +118,54 @@ export const HomePage: React.FC = () => {
         canonicalPath="/"
         structuredData={homeStructuredData}
       />
-      {/* Hero Section */}
-      <section className="text-center pt-2 pb-6 max-w-3xl mx-auto space-y-4">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-green-50 text-green-700 border border-green-200 shadow-2xs">
-          <Sparkles className="w-3.5 h-3.5 text-green-600" />
-          <span>{t.home.badge}</span>
-        </div>
+      {/* Hero Section with Cinematic Night Stadium Background */}
+      <section className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-800/80 my-2">
+        {/* Stadium Background under Floodlights (Pure Athletic Pitch & Architecture) */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=2000&q=80')",
+          }}
+          role="img"
+          aria-label="Football stadium under floodlights at night"
+        />
+        {/* Dark Vignette Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-slate-900/90 to-slate-950" />
 
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight leading-[1.15]">
-          {t.home.heroTitlePrefix}
-          <span className="text-green-600">{t.home.heroTitleHighlight}</span>
-        </h1>
+        {/* Hero Content */}
+        <div className="relative z-10 text-center px-6 py-12 sm:py-16 lg:py-20 max-w-3xl mx-auto space-y-5">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-950/80 text-emerald-300 border border-emerald-500/30 backdrop-blur-xs shadow-xs">
+            <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
+            <span>{t.home.badge}</span>
+          </div>
 
-        <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          {t.home.heroSubtitle}
-        </p>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-[1.15]">
+            {t.home.heroTitlePrefix}{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-300 to-green-400">
+              {t.home.heroTitleHighlight}
+            </span>
+          </h1>
 
-        {/* Value Prop Badges */}
-        <div className="flex flex-wrap justify-center items-center gap-3 pt-2 text-xs font-medium text-gray-600">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-gray-100/90 text-gray-800">
-            <Zap className="w-3.5 h-3.5 text-amber-500" />
-            {t.common.zeroLatency}
-          </span>
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-gray-100/90 text-gray-800">
-            <Cpu className="w-3.5 h-3.5 text-green-600" />
-            {t.common.clientSide}
-          </span>
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-gray-100/90 text-gray-800">
-            <ShieldCheck className="w-3.5 h-3.5 text-blue-600" />
-            {t.common.transparentFormulas}
-          </span>
+          <p className="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
+            {t.home.heroSubtitle}
+          </p>
+
+          {/* Value Prop Badges */}
+          <div className="flex flex-wrap justify-center items-center gap-3 pt-2 text-xs font-medium text-slate-300">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/70 text-slate-200 backdrop-blur-xs">
+              <Zap className="w-3.5 h-3.5 text-amber-400" />
+              {t.common.zeroLatency}
+            </span>
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/70 text-slate-200 backdrop-blur-xs">
+              <Cpu className="w-3.5 h-3.5 text-emerald-400" />
+              {t.common.clientSide}
+            </span>
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/70 text-slate-200 backdrop-blur-xs">
+              <ShieldCheck className="w-3.5 h-3.5 text-blue-400" />
+              {t.common.transparentFormulas}
+            </span>
+          </div>
         </div>
       </section>
 
@@ -203,10 +221,10 @@ export const HomePage: React.FC = () => {
                 key={cat}
                 type="button"
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer ${
+                className={`px-3.5 py-1.5 rounded-lg text-xs whitespace-nowrap transition-all cursor-pointer ${
                   isSelected
-                    ? 'bg-green-600 text-white shadow-xs'
-                    : 'bg-white border border-gray-200 text-gray-700 hover:bg-gray-50'
+                    ? 'bg-green-600 text-white font-bold shadow-xs'
+                    : 'bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-700/70'
                 }`}
               >
                 {getCategoryLabel(cat)}
